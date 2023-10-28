@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/book.css" />
+    <title>Booking Now</title>
+  </head>
+  <body>
+    <header>
+      <div id="menu_bar" class="fas fa-bars" onclick="showmenu()"></div>
+      <a href="#" class="logo">Hello <span>W</span>orld</a>
+      <nav class="navBar">
+        <a href="main.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="book.html">Book</a>
+        <a href="packages.html">Backages</a>
+        <a href="services.html">Services</a>
+        <a href="gallry.html">Gallery</a>
+      </nav>
+      <div class="icon">
+        <i class="fas fa-search" id="searchBtn" onclick="showBar()"></i>
+        <i class="fas fa-user" onclick="showForm()"></i>
+      </div>
+      <form action="#" class="search-form">
+        <input type="search" id="search-Bar" placeholder="Hello World! " />
+        <label for="search-Bar" class="fas fa-search"></label>
+      </form>
+    </header>
+    <!-- Start Login Div -->
+    <div class="loginForm">
+      <form action="">
+        <i class="fa-solid fa-xmark" id="form-close" onclick="closeForm()"></i>
+        <h3>Login</h3>
+        <input type="email" placeholder="Enter Your Email" class="box" />
+        <input type="password" placeholder="Enter Your Password" class="box" />
+        <input type="submit" class="btn" value="Login Now" />
+        <input type="checkbox" id="remember" />
+        <label for="remember">Remember Me</label>
+        <p>Forget Password? <a href="#">Click Here</a></p>
+        <p>Dont Have Account! <a href="#">Sign Up</a></p>
+      </form>
+    </div>
+    <!-- End Login Div -->
+
+    <!-- section One (Home)-->
+    <section class="home" id="home">
+      <div class="contant">
+        <h3>Hello World MackE Travel Easy</h3>
+        <p>Discover New Places With Us, Adventurer Awaits</p>
+        <a href="#" class="btn">Discover More</a>
+      </div>
+    </section>
+
+    <!-- Start Section (Booking) -->
+    <section id="book" class="book">
+      <h1 class="hidden">
+        <span>B</span>
+        <span>O</span>
+        <span>O</span>
+        <span>K</span>
+        &nbsp; &nbsp;
+        <span>N</span>
+        <span>O</span>
+        <span>W</span>
+      </h1>
+      <div class="row">
+        <div class="image">
+          <img src="image/sec2.jpeg" alt="Travel photo" />
+        </div>
+        <form action="" id="myForm">
+          <div class="inputDiv">
+            <h3>Name</h3>
+            <input type="text" placeholder="Enter Your Name" id="name" />
+          </div>
+          <div class="inputDiv">
+            <h3>Phone</h3>
+            <input type="tel" placeholder="Enter Your Phone" id="phone" />
+          </div>
+          <div class="inputDiv">
+            <h3>Email</h3>
+            <input type="email" placeholder="Email" id="email" />
+          </div>
+          <div class="inputDiv">
+            <h3>Packages</h3>
+            <input type="text" placeholder="Packages" id="Package" />
+          </div>
+          <div class="inputDiv">
+            <h3>passengers</h3>
+            <input type="text" placeholder="Passengers" id="passengers" />
+          </div>
+          <div class="inputDiv">
+            <h3>Leaving</h3>
+            <input type="text" placeholder="Place Name" id="leaving" />
+          </div>
+          <div class="inputDiv">
+            <h3>Arrival</h3>
+            <input type="text" placeholder="Arrival" id="arrival" />
+          </div>
+          <input type="submit" class="btn" value="Book Now" id="bookNow" />
+        </form>
+      </div>
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Passengers</th>
+            <th>packages</th>
+            <th>Leaving</th>
+            <th>Arrival</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+    <!-- //////////////////////////////// -->
+    <section class="footer">
+      <div class="boxContainer">
+        <div class="box">
+          <h3>about us</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+            sunt.
+          </p>
+        </div>
+        <div class="box">
+          <h3>barnch</h3>
+          <a href="#">Egypt</a>
+          <a href="#">london</a>
+          <a href="#">Korea</a>
+          <a href="#">Japan</a>
+        </div>
+        <div class="box">
+          <h3>quickLinks</h3>
+          <a href="#">Home</a>
+          <a href="#">Book</a>
+          <a href="#">Packages</a>
+          <a href="#">Services</a>
+          <a href="#">galary</a>
+          <a href="#">review</a>
+          <a href="#">contact</a>
+        </div>
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">instgram</a>
+          <a href="#">linkedin</a>
+        </div>
+      </div>
+      <h1 class="created">
+        Created By <span>Ahmed Mahmoud Fawzy</span> all right reserved
+      </h1>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>

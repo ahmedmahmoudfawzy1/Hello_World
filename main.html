@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/master.css" />
+    <title>Hello World</title>
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header>
+      <div id="menu_bar" class="fas fa-bars" onclick="showmenu()"></div>
+      <a href="#" class="logo">Hello <span>W</span>orld</a>
+      <nav class="navBar">
+        <a href="main.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="book.html">Book</a>
+        <a href="packages.html">Backages</a>
+        <a href="services.html">Services</a>
+        <a href="gallry.html">Gallery</a>
+      </nav>
+      <div class="icon">
+        <i class="fas fa-search" id="searchBtn" onclick="showBar()"></i>
+        <i class="fas fa-user" onclick="showForm()"></i>
+      </div>
+      <form action="#" class="search-form">
+        <input type="search" id="search-Bar" placeholder="Hello World! " />
+        <label for="search-Bar" class="fas fa-search"></label>
+      </form>
+    </header>
+
+    <!-- End Header -->
+
+    <!-- Start Login Div -->
+    <div class="loginForm">
+      <form action="" id="loginForm">
+        <i class="fa-solid fa-xmark" id="form-close" onclick="closeForm()"></i>
+        <h3>Login</h3>
+        <input
+          type="email"
+          placeholder="Enter Your Email"
+          class="box"
+          id="email"
+        />
+        <input
+          type="password"
+          placeholder="Enter Your Password"
+          class="box"
+          id="password"
+        />
+        <input type="submit" class="btn" value="Login Now" id="adminlog" />
+        <p>Forget Password? <a href="#">Click Here</a></p>
+        <h3 id="invalid"></h3>
+      </form>
+    </div>
+    <!-- End Login Div -->
+
+    <!-- section One -->
+    <section class="home" id="home">
+      <div class="contant">
+        <h3>Hello World MakE Travel Easy</h3>
+        <p>Discover New Places With Us, Adventurer Awaits</p>
+        <a href="#" class="btn">Discover More</a>
+      </div>
+      <div class="control">
+        <span class="video-btn blue" data-src="image/1.mp4"></span>
+        <span class="video-btn" data-src="image/2.mp4"></span>
+        <span class="video-btn" data-src="image/3.mp4"></span>
+        <span class="video-btn" data-src="image/4.mp4"></span>
+        <span class="video-btn" data-src="image/5.mp4"></span>
+      </div>
+      <div class="video-container">
+        <video src="image/1.mp4" autoplay muted loop id="video-slider"></video>
+      </div>
+    </section>
+
+    <!-- <section id="book" class="book">
+      <h1 class="hidden">
+        <span>B</span>
+        <span>O</span>
+        <span>O</span>
+        <span>K</span>
+        &nbsp; &nbsp;
+        <span>N</span>
+        <span>O</span>
+        <span>W</span>
+      </h1>
+      <div class="row">
+        <div class="image">
+          <img src="image/sec2.jpeg" alt="Travel photo" />
+        </div>
+        <form action="">
+          <div class="inputDiv">
+            <h3>Where To Go</h3>
+            <input type="text" placeholder="Place Name" />
+          </div>
+          <div class="inputDiv">
+            <h3>How Many ?</h3>
+            <input type="text" placeholder="Place Name" />
+          </div>
+          <div class="inputDiv">
+            <h3>Arrival</h3>
+            <input type="text" placeholder="Place Name" />
+          </div>
+          <div class="inputDiv">
+            <h3>Leaving</h3>
+            <input type="text" placeholder="Place Name" />
+          </div>
+          <input type="submit" class="btn" value="Book Now" />
+        </form>
+      </div>
+    </section> -->
+    <!-- End Section Two (booking)-->
+
+    <!-- Start Section Three (packages) -->
+    <section class="packages" id="packages">
+      <h1 class="hidden">
+        <span>P</span>
+        <span>a</span>
+        <span>c</span>
+        <span>K</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+      </h1>
+      <div class="container">
+        <div class="box">
+          <img src="image/korea.jpeg" alt="Korea" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Korea</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$90.00 <span>120.00$</span></div>
+            <a href="#" class="btn">Check Now</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image/canda.jpg" alt="Canda" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Canda</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$150.00 <span>170.00$</span></div>
+            <a href="#" class="btn">Check Now</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image/4.jpeg" alt="Egypt" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Egypt</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$50.00 <span>90.00$</span></div>
+            <a href="#" class="btn">Check Now</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image/braziel.jpg" alt="Braziel" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Braziel</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$100.00 <span>150.00$</span></div>
+            <a href="#" class="btn">Check Now</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image/italy.jpg" alt="Italy" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Italy</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$90.00 <span>120.00$</span></div>
+            <a href="#" class="btn">Check Now</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image/france.jpeg" alt="Franc" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Franc</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$90.00 <span>120.00$</span></div>
+            <a href="#" class="btn">Check Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Two -->
+    <!-- Start  Section Three -->
+    <section class="services" id="services">
+      <h1 class="hidden">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+      </h1>
+      <div class="container">
+        <div class="boxs">
+          <i class="fas fa-hotel"></i>
+          <h3>Hotels</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum
+            animi accusantium quae.
+          </p>
+        </div>
+        <div class="boxs">
+          <i class="fas fa-utensils"></i>
+          <h3>Restaurants</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum
+            animi accusantium quae.
+          </p>
+        </div>
+        <div class="boxs">
+          <i class="fas fa-bullhorn"></i>
+          <h3>Affordable</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum
+            animi accusantium quae.
+          </p>
+        </div>
+        <div class="boxs">
+          <i class="fas fa-globe-asia"></i>
+          <h3>Around the world</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum
+            animi accusantium quae.
+          </p>
+        </div>
+        <div class="boxs">
+          <i class="fas fa-plane"></i>
+          <h3>Air Line</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum
+            animi accusantium quae.
+          </p>
+        </div>
+        <div class="boxs">
+          <i class="fas fa-hiking"></i>
+          <h3>Tour guide</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum
+            animi accusantium quae.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Three -->
+
+    <section id="book" class="book">
+      <h1 class="hidden">
+        <span>B</span>
+        <span>O</span>
+        <span>O</span>
+        <span>K</span>
+        &nbsp; &nbsp;
+        <span>N</span>
+        <span>O</span>
+        <span>W</span>
+      </h1>
+      <div class="row">
+        <div class="image">
+          <img src="image/sec2.jpeg" alt="Travel photo" />
+        </div>
+        <form action="" id="myForm">
+          <div class="inputDiv">
+            <h3>Name</h3>
+            <input type="text" placeholder="Enter Your Name" id="name" />
+          </div>
+          <div class="inputDiv">
+            <h3>Phone</h3>
+            <input type="tel" placeholder="Enter Your Phone" id="phone" />
+          </div>
+          <div class="inputDiv">
+            <h3>Email</h3>
+            <input type="email" placeholder="Email" id="email" />
+          </div>
+          <div class="inputDiv">
+            <h3>Packages</h3>
+            <input type="text" placeholder="Packages" id="Package" />
+          </div>
+          <div class="inputDiv">
+            <h3>passengers</h3>
+            <input type="text" placeholder="Passengers" id="passengers" />
+          </div>
+          <div class="inputDiv">
+            <h3>Leaving</h3>
+            <input type="text" placeholder="Place Name" id="leaving" />
+          </div>
+          <div class="inputDiv">
+            <h3>Arrival</h3>
+            <input type="text" placeholder="Arrival" id="arrival" />
+          </div>
+          <input type="submit" class="btn" value="Book Now" id="bookNow" />
+        </form>
+      </div>
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Passengers</th>
+            <th>packages</th>
+            <th>Leaving</th>
+            <th>Arrival</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+    <!-- End Section Two (booking)-->
+    <!-- Start Section Foure  -->
+    <section class="gallery" id="gallery">
+      <h1 class="hidden">
+        <span>G</span>
+        <span>A</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+      </h1>
+      <div class="container">
+        <div class="boxes">
+          <img src="image/fcc352e3.avif" alt="a" />
+          <div class="content">
+            <h3>Amazing</h3>
+            <p>
+              Planning a tropical beach vacation? Here are 12 of the best
+              all-inclusive resorts in Mexico, according to Hotels.com
+            </p>
+            <a
+              href="https://www.travelandleisure.com/hotels-resorts/all-inclusive-resorts/best-all-inclusive-resorts-mexico"
+              class="btn"
+              >See More</a
+            >
+          </div>
+        </div>
+        <div class="boxes">
+          <img src="image/44138645.avif" alt="a" />
+          <div class="content">
+            <h3>Amazing</h3>
+            <p>
+              Planning a tropical beach vacation? Here are 12 of the best
+              all-inclusive resorts in Mexico, according to Hotels.com
+            </p>
+            <a
+              href="https://www.hotels.com/Hotel-Search?adults=null&children=null&destination=Giza%2C%20Giza%20Governorate%2C%20Egypt&endDate=2023-11-05&regionId=178624&selected=91258080&semdtl=&sort=RECOMMENDED&startDate=2023-11-03&theme=&useRewards=false&userIntent="
+              class="btn"
+              >See More</a
+            >
+          </div>
+        </div>
+        <div class="boxes">
+          <img src="image/d736a4f4.avif" alt="a" />
+          <div class="content">
+            <h3>Amazing</h3>
+            <p>
+              Planning a tropical beach vacation? Here are 12 of the best
+              all-inclusive resorts in Mexico, according to Hotels.com
+            </p>
+            <a
+              href="https://www.hotels.com/Hotel-Search?adults=null&children=null&destination=Giza%2C%20Giza%20Governorate%2C%20Egypt&endDate=2023-11-05&regionId=178624&selected=91258080&semdtl=&sort=RECOMMENDED&startDate=2023-11-03&theme=&useRewards=false&userIntent="
+              class="btn"
+              >See More</a
+            >
+          </div>
+        </div>
+        <div class="boxes">
+          <img src="image/download (4).jpg" alt="a" />
+          <div class="content">
+            <h3>Amazing</h3>
+            <p>
+              Planning a tropical beach vacation? Here are 12 of the best
+              all-inclusive resorts in Mexico, according to Hotels.com
+            </p>
+            <a
+              href="https://www.hotels.com/Hotel-Search?adults=null&children=null&destination=Giza%2C%20Giza%20Governorate%2C%20Egypt&endDate=2023-11-05&regionId=178624&selected=91258080&semdtl=&sort=RECOMMENDED&startDate=2023-11-03&theme=&useRewards=false&userIntent="
+              class="btn"
+              >See More</a
+            >
+          </div>
+        </div>
+        <div class="boxes">
+          <img src="image/download (3).jpg" alt="a" />
+          <div class="content">
+            <h3>Amazing</h3>
+            <p>
+              Planning a tropical beach vacation? Here are 12 of the best
+              all-inclusive resorts in Mexico, according to Hotels.com
+            </p>
+            <a
+              href="https://www.hotels.com/Hotel-Search?adults=null&children=null&destination=Giza%2C%20Giza%20Governorate%2C%20Egypt&endDate=2023-11-05&regionId=178624&selected=91258080&semdtl=&sort=RECOMMENDED&startDate=2023-11-03&theme=&useRewards=false&userIntent="
+              class="btn"
+              >See More</a
+            >
+          </div>
+        </div>
+        <div class="boxes">
+          <img src="image/download (2).jpg" alt="a" />
+          <div class="content">
+            <h3>Amazing</h3>
+            <p>
+              Planning a tropical beach vacation? Here are 12 of the best
+              all-inclusive resorts in Mexico, according to Hotels.com
+            </p>
+            <a
+              href="https://www.hotels.com/Hotel-Search?adults=null&children=null&destination=Giza%2C%20Giza%20Governorate%2C%20Egypt&endDate=2023-11-05&regionId=178624&selected=91258080&semdtl=&sort=RECOMMENDED&startDate=2023-11-03&theme=&useRewards=false&userIntent="
+              class="btn"
+              >See More</a
+            >
+          </div>
+        </div>
+        <div class="boxes">
+          <img src="image/download (1).jpg" alt="a" />
+          <div class="content">
+            <h3>Amazing</h3>
+            <p>
+              Planning a tropical beach vacation? Here are 12 of the best
+              all-inclusive resorts in Mexico, according to Hotels.com
+            </p>
+            <a
+              href="https://www.hotels.com/Hotel-Search?adults=null&children=null&destination=Giza%2C%20Giza%20Governorate%2C%20Egypt&endDate=2023-11-05&regionId=178624&selected=91258080&semdtl=&sort=RECOMMENDED&startDate=2023-11-03&theme=&useRewards=false&userIntent="
+              class="btn"
+              >See More</a
+            >
+          </div>
+        </div>
+        <div class="boxes">
+          <img src="image/istockphoto-1277828963-1024x1024.jpg" alt="a" />
+          <div class="content">
+            <h3>Amazing</h3>
+            <p>
+              Planning a tropical beach vacation? Here are 12 of the best
+              all-inclusive resorts in Mexico, according to Hotels.com
+            </p>
+            <a
+              href="https://www.hotels.com/Hotel-Search?adults=null&children=null&destination=Giza%2C%20Giza%20Governorate%2C%20Egypt&endDate=2023-11-05&regionId=178624&selected=91258080&semdtl=&sort=RECOMMENDED&startDate=2023-11-03&theme=&useRewards=false&userIntent="
+              class="btn"
+              >See More</a
+            >
+          </div>
+        </div>
+        <div class="boxes">
+          <img src="image/download.jpg" alt="a" />
+          <div class="content">
+            <h3>Amazing</h3>
+            <p>
+              Planning a tropical beach vacation? Here are 12 of the best
+              all-inclusive resorts in Mexico, according to Hotels.com
+            </p>
+            <a
+              href="https://www.hotels.com/Hotel-Search?adults=null&children=null&destination=Giza%2C%20Giza%20Governorate%2C%20Egypt&endDate=2023-11-05&regionId=178624&selected=91258080&semdtl=&sort=RECOMMENDED&startDate=2023-11-03&theme=&useRewards=false&userIntent="
+              class="btn"
+              >See More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------------- -->
+    <section class="ٌreview" id="ٌreview">
+      <h1 class="hidden">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+      </h1>
+      <div class="swiper reviewSlider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="image/e554588d.avif" alt="" />
+              <h3>Ahmed</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+                dicta.
+              </p>
+              <div class="strars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="image/download (5).jpg" alt="" />
+              <h3>Frank</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+                dicta.
+              </p>
+              <div class="strars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="image/download (6).jpg" alt="" />
+              <h3>Jack</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+                dicta.
+              </p>
+              <div class="strars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="image/download (8).jpg" alt="" />
+              <h3>Daly</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+                dicta.
+              </p>
+              <div class="strars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------------------------------------------------- -->
+
+    <!-- ---------------------------------------------------------------- -->
+
+    <section class="contact" id="contact">
+      <h1 class="hidden">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+      </h1>
+      <div class="row">
+        <div class="imagees">
+          <img src="image/3.jpeg" alt="" />
+        </div>
+        <form action="">
+          <div class="inputBox">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Mail" />
+          </div>
+          <div class="inputBox">
+            <input type="number" placeholder="Number" />
+            <input type="text" placeholder="Subject" />
+          </div>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <input type="submit" class="btn" value="Send Message" />
+        </form>
+      </div>
+    </section>
+    <!-- /////////////////////////////////////////////////////////////////////////////// -->
+    <!-- /////////////////////////////////////////////////////////////////////////////// -->
+    <section class="footer">
+      <div class="boxContainer">
+        <div class="box">
+          <h3>about us</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+            sunt.
+          </p>
+        </div>
+        <div class="box">
+          <h3>barnch</h3>
+          <a href="#">Egypt</a>
+          <a href="#">london</a>
+          <a href="#">Korea</a>
+          <a href="#">Japan</a>
+        </div>
+        <div class="box">
+          <h3>quickLinks</h3>
+          <a href="#">Home</a>
+          <a href="#">Book</a>
+          <a href="#">Packages</a>
+          <a href="#">Services</a>
+          <a href="#">galary</a>
+          <a href="#">review</a>
+          <a href="#">contact</a>
+        </div>
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">instgram</a>
+          <a href="#">linkedin</a>
+        </div>
+      </div>
+      <h1 class="created">
+        Created By <span>Ahmed Mahmoud Fawzy</span> all right reserved
+      </h1>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
